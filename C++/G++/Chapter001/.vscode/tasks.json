@@ -1,0 +1,25 @@
+{
+    "version": "0.1.0",
+    "showOutput": "always",
+    "tasks": [
+        // {
+        //     "taskName":"compile",
+        //     "command": "g++",
+        //     "args": [
+        //         "-o",
+        //         "${file}.cpp"
+        //     ],
+        //     "isShellCommand": true,
+        //     "isBuildCommand": true
+        // }
+        {
+            "taskName": "Hello",
+            "command": "echo",
+            "args": [
+                "${file}"
+            ],
+            "echoCommand": true,
+            "isShellCommand": true
+        }
+    ]
+}
