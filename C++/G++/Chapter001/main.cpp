@@ -1,8 +1,11 @@
-#include <iostream>
+#include "MoeLecture.h"
 
 int main()
 {
-    std::cout<<"hello g++"<<std::endl;
+    MoeLecture moe;
 
+    moe.Question();
+    //moe.Main();
+    
     return 0;
 }

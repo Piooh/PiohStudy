@@ -48,7 +48,9 @@
             "browse": {
                 "path": [
                     "C:/MinGW/include",
-                    "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++"
+                    "C:/MinGW/lib/gcc/mingw32/5.3.0/include/c++",
+                    "${workspaceRoot}/Header",
+                    "${workspaceRoot}/Sources"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": ""

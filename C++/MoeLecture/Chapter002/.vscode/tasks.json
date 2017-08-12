@@ -11,7 +11,13 @@
             "command": "g++",
             "args": [
                 "-std=c++14",
-                "${file}"
+                "-W",
+                "-Wall",
+                "-O2",
+                "-o",
+                "${workspaceRoot}\\Headers\\stdafx.h",
+                "${workspaceRootFolderName}.exe",
+                "*.cpp"
             ],
             "isBuildCommand": true
         }
