@@ -1,0 +1,48 @@
+
+[Master Build Start!!!]
+
+
+[REAL-Debug build start!!!]
+
+[1, svn update start!!!]
+
+Updating 'D:\PoolTime\SL2_SourcesNeoBilliards':
+At revision 13115.
+[1, svn update end!!!]
+
+[2, unity build start!!!]
+
+[2, unity build end!!!]
+
+[3, upload to shared folder start!!!]
+
+[3, upload to shared folder end!!!]
+
+
+[REAL-Debug build End!!!]
+
+
+[REAL-Release build start!!!]
+
+[1, svn update start!!!]
+
+Updating 'D:\PoolTime\SL2_SourcesNeoBilliards':
+At revision 13115.
+[1, svn update end!!!]
+
+[2, unity build start!!!]
+
+[2, unity build end!!!]
+
+[3, upload to shared folder start!!!]
+
+[3, upload to shared folder end!!!]
+
+
+[REAL-Release build End!!!]
+
+
+[Master Build End!!!]
+
+bye!!!
+
