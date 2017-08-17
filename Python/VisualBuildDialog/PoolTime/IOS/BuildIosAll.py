@@ -32,4 +32,4 @@ if __name__ == '__main__':
     BuildConfig.gPrestoServerMode = ["REAL"]
     BuildConfig.gPrestoBuildMode = ["RELEASE"]
     
-    IosBuildManager.BuildAll(SvnSourceUpdate=True, SvnUpdateRevision=-1, UploadToSharedFolder=True, SvnIPACommit=False, MailTo=True)
+    IosBuildManager.BuildAll(SvnSourceUpdate=False, SvnUpdateRevision=-1, UploadToSharedFolder=True, SvnIPACommit=False, MailTo=True)

@@ -24,10 +24,11 @@ class BuildConfig:
     #unity executable path
     excutablePath = r"C:/Program Files/Unity/Editor/Unity.exe"
     #master svn path
-    svnPath = r"D:\PoolTime"
+    svnPath = r"D:/Study/PiohStudy/Python/VisualBuildDialog" #r"D:\PoolTime"
     #svn project path
     #svnProjectPath = svnPath + r"/SourcesNeoBilliards"
-    svnProjectPath = svnPath + r"/SL2_SourcesNeoBilliards"
+    #svnProjectPath = svnPath + r"/SL2_SourcesNeoBilliards"
+    svnProjectPath = svnPath + r"/PoolTime"
     
     sharedDrive = "\\\\10.101.56.242\\b-adshare"
     sharedDirectory = "\\PocketBuild\\AOS\\"

@@ -1,4 +1,4 @@
-자동 빌드 사용 방법
+﻿자동 빌드 사용 방법
 
 1, 자동 빌드 스크립트 파일 svn 경로 : http://10.101.56.241/Pooltime/Build/
 
@@ -15,14 +15,14 @@ ex) alpha 서버로 빌드하려면 이름에 alpha가 들어간 스크립트를
 
 4, 빌드 설정 파일 구성
 
-	serverModes = ["DEV", "ALPHA", "REAL"]					// "DEV", "ALPHA", "REAL" 를 접속 서버로하는 빌드를 만듭니다. 알파와 리얼만 하고 싶으면 serverModes = ["ALPHA", "REAL"]로 설정합니다.
+	serverModes = ["DEV", "ALPHA", "REAL"]			// "DEV", "ALPHA", "REAL" 를 접속 서버로하는 빌드를 만듭니다. 알파와 리얼만 하고 싶으면 serverModes = ["ALPHA", "REAL"]로 설정합니다.
     profiles = ["development", "adhoc", "distribution"]		// IOS의 경우 사이닝 할 profile을 나타냅니다. "adhoc" 만 빌드하고 싶으면 profiles = ["adhoc"]으로 합니다.
-    debugModes = ["DEV", "ALPHA", "REAL"]					// 디버그 모드로 빌드할 서버 모드를 선택합니다. 디버그 모드를 빌드하고 싶지 않으면 []으로 합니다.
-    releaseModes = ["DEV", "ALPHA", "REAL"]					// 릴리즈 모드로 빌드할 서버 모드를 선택합니다. 릴리즈 모드를 빌드하고 싶지 않으면 []으로 합니다.
-    adjustServerMode = ["REAL"]								// adjust 플러그인을 사용할 서버모드를 선택합니다.
-    adjustBuildMode = ["DEBUG", "RELEASE"]					// adjust 플러그인을 사용할 빌드 모드(Debug/Release)를 선택합니다.
-    gPrestoServerMode = ["REAL"]							// gpresto 플러그인을 사용할 서버모드를 선택합니다.
-    gPrestoBuildMode = ["RELEASE"]							// gpresto 플러그인을 사용할 빌드 모드(Debug/Release)를 선택합니다.
+    debugModes = ["DEV", "ALPHA", "REAL"]			// 디버그 모드로 빌드할 서버 모드를 선택합니다. 디버그 모드를 빌드하고 싶지 않으면 []으로 합니다.
+    releaseModes = ["DEV", "ALPHA", "REAL"]			// 릴리즈 모드로 빌드할 서버 모드를 선택합니다. 릴리즈 모드를 빌드하고 싶지 않으면 []으로 합니다.
+    adjustServerMode = ["REAL"]					// adjust 플러그인을 사용할 서버모드를 선택합니다.
+    adjustBuildMode = ["DEBUG", "RELEASE"]			// adjust 플러그인을 사용할 빌드 모드(Debug/Release)를 선택합니다.
+    gPrestoServerMode = ["REAL"]				// gpresto 플러그인을 사용할 서버모드를 선택합니다.
+    gPrestoBuildMode = ["RELEASE"]				// gpresto 플러그인을 사용할 빌드 모드(Debug/Release)를 선택합니다.
     
     
     #version
