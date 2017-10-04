@@ -1,5 +1,6 @@
 import sys
 import os
+import ctypes
 
 from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QMessageBox
 from PyQt5.QtGui import QIcon
@@ -14,8 +15,8 @@ class PoolTimeBuildDialog(QWidget):
         self.title = 'PoolTime Build Dialog'
         self.left = 200
         self.top = 200
-        self.width = 320
-        self.height = 500
+        self.width = 340
+        self.height = 550
         self.setFixedSize( 320, 500 )
         self.initUI()
 
@@ -24,13 +25,13 @@ class PoolTimeBuildDialog(QWidget):
         self.setGeometry(self.left, self.top, self.width, self.height)
         
         #make editBox, get project Path
-        self.projectPathEditBox = DirectoryPathEditBox(self,"PoolTime 프로젝트 경로", 300, 60)
+        self.projectPathEditBox = DirectoryPathEditBox(self,"PoolTime 프로젝트 경로", 300, 80)
 
         #make editBox, input version
-        self.versionCodeGroup = VersionCodeGroup(self, "버전", 10, 80, 300, 80)
+        self.versionCodeGroup = VersionCodeGroup(self, "버전", 10, 80, 300, 100)
 
         #make mode option
-        self.buildOptionGroup = BuildOptionGroup(self, "빌드 옵션", 10, 170, 300, 250)
+        self.buildOptionGroup = BuildOptionGroup(self, "빌드 옵션", 10, 170, 300, 260)
 
         #make build button
         buildButton = QPushButton("빌드 시작", self)
@@ -53,8 +54,12 @@ class PoolTimeBuildDialog(QWidget):
     def saveSettings(self):
         print("save prev setting")
 
-        f = open(r'/BuildSetting.txt', 'w')
-        if nil != f :
+        try:
+            #f = open(r'BuildSetting.txt', 'w')
+            f = None
+        except Exception as err:
+            expcetMsg = QMessageBox.critical(self, "file read / write error", str(err) )
+        finally:
             f.write( "[ProjectPath] : " + self.projectPathEditBox.path + "\n")
             f.close()
 

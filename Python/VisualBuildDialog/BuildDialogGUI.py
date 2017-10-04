@@ -78,7 +78,7 @@ class BuildOptionGroup(QGroupBox):
 
         self.setParent(parent)
         self.setTitle(title)
-        self.setGeometry(10, 170, 300, 250)
+        self.setGeometry(x, y, width, height)
         
         vLayout = QVBoxLayout()
         self.makeSvnComboBox(vLayout)
