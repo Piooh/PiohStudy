@@ -58,7 +58,7 @@ class PoolTimeBuildDialog(QWidget):
             #f = open(r'BuildSetting.txt', 'w')
             f = None
         except Exception as err:
-            expcetMsg = QMessageBox.critical(self, "file read / write error", str(err) )
+            expcetMsg = QMessageBox.critical(self, "file read / write error", str(err), QMessageBox.Ok )
         finally:
             f.write( "[ProjectPath] : " + self.projectPathEditBox.path + "\n")
             f.close()
